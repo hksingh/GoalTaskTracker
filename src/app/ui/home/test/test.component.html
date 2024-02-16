@@ -1,0 +1,6 @@
+<p>test works!</p>
+<div *ngIf="tasktypeList$| async as tasktypeList">
+    <ul>
+        <li *ngFor="let item of tasktypeList">{{item.tasktypename}}</li>
+    </ul>
+</div>
